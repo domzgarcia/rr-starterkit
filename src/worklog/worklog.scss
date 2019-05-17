@@ -1,0 +1,95 @@
+#worklog {
+    .header {
+        height: 85px;
+        background: #4BA3E2;
+        padding: 30px 12px 25px 45px;
+        .title {
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+}
+.viewTab {
+    display: inline-block;
+    height: 30px;
+    border: 1px solid #CBCBCB;
+    color: #fff;
+    // float: left;
+    width: 50%;
+    text-align: center;
+    padding: 6px 5px;
+    background: #959494;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+.viewTab.-active {
+    color: #9D9D9D;
+    background: #fff;
+}
+.timeRenderedWrap {
+    background: #EBEBEB;
+    margin: 10px 10px 0;
+    padding: 25px;
+    height: 74px;
+    font-size: 18px;
+    color:#7E7E7E;
+
+    /*temporary should use react date library here*/
+    input[type='date'] {
+        font-size: 18px;
+        color:#7E7E7E;
+        font-weight: bold;
+        border: none;
+        background: transparent;
+        vertical-align: top;
+    }
+    .dateSelectorWrap {
+        max-width: 160px;
+        width: 100%;
+        float: left;
+    }
+    .previewTimeWrap {
+        vertical-align: top;
+        float: right;
+        text-transform: uppercase;
+        .value {
+            font-weight: bold;
+        }
+    }
+}
+.bodyProper {
+    padding: 10px;
+}
+
+.worklogEditorWrap {
+    height: 70px;
+    margin: 10px 0;
+
+    .dom-grid-col-5,
+    .dom-grid-col-4,
+    .dom-grid-col-3 {
+        border: 1px solid #fff;
+        float: left;
+        background: #eee;
+        height: 100%;
+    }
+    .dom-grid-col-5 {
+        width: calc((5/12)* 100%);
+    }
+    .dom-grid-col-4 {
+        width: calc((4/12)* 100%);
+    }
+    .dom-grid-col-3 {
+        width: calc((3/12)* 100%);
+    }
+}
+.-withCustomPostion {
+    background: #fff !important;
+    padding-left: 30px !important;
+    .dom-btn {
+        margin-top: 30px;
+    }
+}

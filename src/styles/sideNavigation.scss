@@ -1,0 +1,17 @@
+.sideNavigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 60px;
+    width: 100%;
+    background: #ddd;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.sideNavigation.-active {
+    max-width: 300px;
+    padding: 15px;
+}
+

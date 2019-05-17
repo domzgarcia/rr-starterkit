@@ -2,8 +2,11 @@
     "compilerOptions": {
         "baseUrl": "src",
         "paths": {
-            "Utils":["src/utils"],
-            "Reducers":["src/reducers"]
+            "reducers":["src/reducers"],
+            "partials":["src/partials"],
+            "styles":["src/styles"],
+            "scenes":["src/scenes"],
+            "utils":["src/utils"]
         }
     }
 }

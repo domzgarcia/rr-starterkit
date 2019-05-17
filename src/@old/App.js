@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Worklog from './worklog';
 import NavContainer from './ui/NavContainer';
-import Modal from 'Utils/Modal';
 
 class App extends React.Component {
   

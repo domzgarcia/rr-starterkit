@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux';
 import {connectRouter} from 'connected-react-router';
-import appUI from './appUI/index';
+import modalUI from 'reducers/modalUI';
 
 const rootReducer = (history) => combineReducers({
-    appUI,
+    modalUI,
     router: connectRouter(history)
 });
 

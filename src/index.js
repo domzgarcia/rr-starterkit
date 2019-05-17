@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import store, {history} from './setup/store'
 import {Provider} from 'react-redux';
-import Setup from './setup';
+import Setup from './setup.js';
 
 // Aesthetics
-import './index.css';
+import 'styles/global.scss';
 
 ReactDOM.render(
     <Provider store={store}>

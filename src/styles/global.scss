@@ -1,0 +1,95 @@
+/*
+|----------------------------------------------------------------------------------------
+| DOMs reset configuration. [SOURCE] https://bitsofco.de/a-look-at-css-resets-in-2018/
+|----------------------------------------------------------------------------------------
+*/
+html,body,section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,
+p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+* { box-sizing: border-box; }
+
+
+/*
+|----------------------------------------------------------------------------------------
+| Clearfix configuration. [SOURCE] http://nicolasgallagher.com/micro-clearfix-hack/
+|----------------------------------------------------------------------------------------
+*/
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+#mainWrapper {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Serve as class only */
+.mainWrapper {
+    padding-left: 60px;
+    transition: .5s ease;
+}
+.mainWrapper.-active {
+    padding-left: 300px;
+}
+
+.dom-gutter {
+    padding: 15px;
+}
+
+.col- {
+    float: left;
+    width: 50%;
+}
+.divider {
+    background: #ddd;
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+.dom-btn.-lightgreen {
+    background: #3ADD40;
+    color: #fff;
+}
+.dom-btn.-lightgreen:active {
+    background: #35D83B;
+}
+.dom-btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.dom-btn.shadowed {
+    box-shadow: 0px 3px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 1024px){
+    #mainWrapper {
+        // height: initial;
+    }
+}
