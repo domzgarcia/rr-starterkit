@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "Utils":["src/utils"],
+            "Reducers":["src/reducers"]
+        }
+    }
+}

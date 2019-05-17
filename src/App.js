@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Worklog from './worklog';
+import NavContainer from './ui/NavContainer';
+import Modal from 'Utils/Modal';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  
+  state = {
+    showModal: false,
+  }
+
+  modalCtrl(){
+    let {showModal} = this.state;
+    this.setState({
+      showModal: !showModal
+    });
+  }
+
+  render(){
+      return (
+      <div className="App">
+        <NavContainer>
+
+          {/* Temporary Control */}
+          <button onClick={this.modalCtrl.bind(this)}>Worklog</button>
+
+          <Modal 
+            autoClose={this.modalCtrl.bind(this)}
+            isShowned={this.state.showModal}
+          />
+        </NavContainer>
+
+      </div>
+    );
+  }
 }
 
 export default App;
