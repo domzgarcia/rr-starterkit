@@ -73,7 +73,7 @@
     .dom-grid-col-3 {
         border: 1px solid #fff;
         float: left;
-        background: #eee;
+        // background: #eee;
         height: 100%;
     }
     .dom-grid-col-5 {
@@ -92,4 +92,17 @@
     .dom-btn {
         margin-top: 30px;
     }
+}
+.inlined {
+    display: inline-block;
+}
+.should-align-right {
+    text-align: right;
+}
+
+.Select_Proj {
+    background: #eee;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
 }

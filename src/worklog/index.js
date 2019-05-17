@@ -1,4 +1,5 @@
 import React from 'react';
+import ItemCounter from './ItemCounter/itemCounter';
 import './worklog.scss';
 
 class Worklog extends React.Component {
@@ -32,14 +33,15 @@ class Worklog extends React.Component {
                 
                 <div className="worklogEditorWrap cf">
                   <div className="dom-grid-col-5">
-                    select project
+                    <div className="Select_Proj"></div>
+                    <div className="Select_Proj"></div>
                   </div> 
-                  <div className="dom-grid-col-3">
-                    <div>
-                      hours
+                  <div className="dom-grid-col-3 should-align-right">
+                    <div className="inlined">
+                      <ItemCounter name="HOUR"/>
                     </div>
-                    <div>
-                      mins
+                    <div className="inlined">
+                      <ItemCounter name="MINS"/>
                     </div>
                   </div> 
                   <div className="dom-grid-col-4 -withCustomPostion">

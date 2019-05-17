@@ -1,0 +1,64 @@
+.itWrap {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+
+    .nameWrap {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        font-size: 14px;
+        color: #7E7E7E;
+        font-weight: bold;
+    }
+}
+.itSquare.-withMods {
+    background: #EBEBEB;
+    padding: 0;
+
+    input[type="number"], 
+    .iText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        text-align: center;
+        background: transparent;
+        font-weight: bold;
+        color: #7E7E7E;
+    }
+}
+.itSquare {
+    position: relative;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+
+    .btnUp,
+    .btnDown {
+        display: inline-block;
+        height: 22px;
+        width: 22px;
+        border: 1px solid #ddd;
+        box-shadow: 0px 2px 2px rgba(0,0,0,.2);
+        background: #fff;
+        color: #707070;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnUp:active,
+    .btnDown:active {
+        background: #eee;
+    }
+}
