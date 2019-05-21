@@ -14,6 +14,7 @@
 }
 .lite-modal-bg.-active {
     display: flex;
+    z-index: 9999;
 }
 .lite-modal-content {
     background: #fff;
@@ -24,21 +25,26 @@
     padding: 0; /* 40px 15px 15px; */
 }
 .lite-modal-exit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 30px;
-    line-height: 30px;
+    /* font-size: 30px; */
+    /* line-height: 30px; */
     color: #444;
     text-decoration: none;
     height: 30px;
     width: 30px;
-    /* border: 1px solid rgba(255, 255, 255, 0.5); */
     display: inline-block;
     text-align: center;
-    transition: .5s ease;
+    transition: .3s ease;
     z-index: 10;
+    padding: 0;
+    background: transparent;
 }
 .lite-modal-exit:hover {
     background: rgba(255, 255, 255, 0.3);
+}
+.lite-modal-btn-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
 }

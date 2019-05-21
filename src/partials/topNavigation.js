@@ -5,7 +5,7 @@ class TopNavigation extends React.Component {
 	render(){	
 		return(
 		<div className="topNavigation">
-            	<small>Top Navigation</small>
+        	<small>Top Navigation</small>
 		</div>)
 	}
 }

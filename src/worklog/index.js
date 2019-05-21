@@ -12,11 +12,10 @@ class Worklog extends React.Component {
                   <span className="title">Worklog</span>
                 </div>
                 <div className="col-">
-                  <a href="javascript:void(0)" className="viewTab -active">Calendar</a>
-                  <a href="javascript:void(0)" className="viewTab">Time Tracker</a>
+                  <div className="viewTab -active">Calendar</div>
+                  <div className="viewTab">Time Tracker</div>
                 </div>
               </div>
-              
 
               <div className="timeRenderedWrap cf">
                 <div className="dateSelectorWrap">
@@ -45,17 +44,14 @@ class Worklog extends React.Component {
                     </div>
                   </div> 
                   <div className="dom-grid-col-4 -withCustomPostion">
-                    <a href="javascript:void(0)" className="dom-btn -lightgreen shadowed">Add to logs</a>
+                    <button type="button" 
+                    className="dom-btn -lightgreen shadowed">Add to logs</button>
                   </div> 
                 </div>
-
+ 
                 <div className="divider"></div>
 
-                <h1></h1>
-
               </div>
-              
-
             </div>
           );      
     }

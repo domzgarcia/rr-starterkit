@@ -6,7 +6,8 @@
             "partials":["src/partials"],
             "styles":["src/styles"],
             "scenes":["src/scenes"],
-            "utils":["src/utils"]
+            "utils":["src/utils"],
+            "vendors":["src/vendors"]
         }
     }
 }

@@ -13,7 +13,8 @@ class Modal extends React.Component {
 		return(
         <div className={"lite-modal-bg " + ((this.props.isPopupOpen) ? '-active' : '')}>    
             <div className="lite-modal-content">
-                <a href="javascript:void(0);" className="lite-modal-exit" onClick={this.handleManagePopup.bind(this)}>&times;</a>
+                <div className="lite-modal-btn-wrapper">
+                    <button className="dom-btn lite-modal-exit" onClick={this.handleManagePopup.bind(this)}>&times;</button>                </div>
                 {this.props.children}
             </div>
         </div>)

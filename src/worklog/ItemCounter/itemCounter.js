@@ -60,10 +60,11 @@ class ItemCounter extends React.Component {
                     {this.state.name}
                 </div>
                 <div className="itSquare">
-                    <a href="javascript:void(0);" 
-                    className="btnUp"
+                    <button 
+                    className="dom-btn btnUp"
+                    type="button"
                     onClick={this.handleDecrease.bind(this)}
-                    >-</a>
+                    >-</button>
                 </div>
                 <div className="itSquare -withMods">
                     <input 
@@ -71,15 +72,15 @@ class ItemCounter extends React.Component {
                     type="text"
                     onChange={this.handleInputChange.bind(this)} 
                     onBlur={this.handleBlur.bind(this)}
-                    // defaultValue={this.state.currCount}
                     value={this.state.currCount}
                     />
                 </div>
                 <div className="itSquare">
-                    <a href="javascript:void(0);" 
-                    className="btnDown"
+                    <button
+                    type="button"
+                    className="dom-btn btnDown"
                     onClick={this.handleIncrease.bind(this)}
-                    >+</a>
+                    >+</button>
                 </div>
             </div>
         )

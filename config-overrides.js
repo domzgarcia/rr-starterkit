@@ -9,6 +9,7 @@ module.exports = function override(config) {
             'styles': path.resolve(__dirname, 'src/styles'),
             'scenes': path.resolve(__dirname, 'src/scenes'),
             'utils': path.resolve(__dirname, 'src/utils'),
+            'vendors': path.resolve(__dirname, 'src/vendors'),
         },
     };
     return config;

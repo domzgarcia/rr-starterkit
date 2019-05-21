@@ -12,7 +12,7 @@ class DefaultScene extends React.Component {
 
 	render(){	
 		return(
-		<div className="defaultScene dom-gutter">
+		<div className="MainContentWrapper defaultScene dom-gutter">
 			<Modal>
 				<Worklog />
 			</Modal>

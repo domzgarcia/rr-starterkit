@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route,Switch} from 'react-router';
 import TopNavigation from 'partials/topNavigation';
-import SideNavigation from 'partials/sideNavigation';
+import SideNavigation from 'partials/sideNavigation/sideNavigation';
 import DefaultScene from 'scenes/DefaultScene';
 
 // Non-recursive route.

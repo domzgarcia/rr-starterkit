@@ -1,5 +1,5 @@
 const initialState = {
-    isPopupOpen: true,
+    isPopupOpen: false,
 }
 
 const modalUI = (state=initialState, {type, payload}) => {

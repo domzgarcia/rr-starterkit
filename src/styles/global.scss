@@ -47,11 +47,16 @@ p, ul, li {
     margin: 0;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    background: #f2f3f7;
+}
+.MainContentWrapper {
+    max-width: 100%;
+    width: 100%;
 }
 /* Serve as class only */
 .mainWrapper {
     padding-left: 60px;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 .mainWrapper.-active {
     padding-left: 300px;
@@ -82,7 +87,6 @@ p, ul, li {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-
     text-align: center;
     display: inline-block;
     max-width: 100%;
@@ -92,6 +96,9 @@ p, ul, li {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    outline: none;
+    border: 0;
+    cursor: pointer;
 }
 .dom-btn.shadowed {
     box-shadow: 0px 3px rgba(0,0,0,0.1);
@@ -102,3 +109,28 @@ p, ul, li {
         // height: initial;
     }
 }
+
+@media only screen and (max-width: 1024px){
+    #mainWrapper,
+    .MainContentWrapper,
+    .topNavigation {
+        max-width: 1024px;
+        width: 1024px;
+    }
+    #mainWrapper {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #mainWrapper,
+    .MainContentWrapper,
+    .topNavigation {
+        max-width: 375px;
+        width: 375px;
+    }
+    #mainWrapper {
+        overflow: hidden;
+    }
+}
+

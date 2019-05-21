@@ -6,6 +6,8 @@ import Setup from './setup.js';
 
 // Aesthetics
 import 'styles/global.scss';
+import 'vendors/font-awesome/css/font-awesome.min.css';
+
 
 ReactDOM.render(
     <Provider store={store}>

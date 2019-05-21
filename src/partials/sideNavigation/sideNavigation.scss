@@ -1,0 +1,39 @@
+.sideNavigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 60px;
+    width: 100%;
+    background: #fff;
+    transition: .3s ease;
+    padding: 15px;
+    padding-top: 59px;
+    border-right: 1px solid #e4e4e4;
+    /* Optional */
+    .btnWrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        text-align: right;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.sideNavigation.-active {
+    max-width: 300px;
+}
+
+.-knob {
+    background: transparent !important;
+    height: 40px !important;
+    text-align: right;
+    max-width: initial !important;
+    width: initial !important;
+    font-size: 20px !important;
+}
+
