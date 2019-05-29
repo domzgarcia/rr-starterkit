@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react';
 import {connect} from 'react-redux';
 import './sideNavigation.scss';
-
 import ListNavigation from './types/ListNavigation';
 
 class SideNavigation extends React.Component {
@@ -15,6 +14,17 @@ class SideNavigation extends React.Component {
 		const {isCollapsed} = this.props
 		return(
 			<div className={"side-navigation " + this.setClassesToActive(isCollapsed)}>
+				
+				<div className="o-logo">
+					<span className="name-desktop">Helium</span>
+					<span className="name-mobile">He</span>
+				</div>
+
+				<br />
+				<br />
+				<br />
+				<br />
+				
 				<Fragment>
 					<ListNavigation isCollapsed={isCollapsed} />
 
@@ -23,10 +33,10 @@ class SideNavigation extends React.Component {
 					? */}<div style={{
 						borderRight:'1px solid #e4e4e4',
 						position: 'absolute',
-						bottom: '0',
+						top: '59px',
 						left: '0',
 						width: '100%',
-						height: '100%',
+						height: 'calc(100% - 60px)',
 				      }}></div>
 					{/* : <span></span>}  */}
 				</Fragment>
@@ -37,7 +47,7 @@ class SideNavigation extends React.Component {
 
 const mapStateToProps = (state) => ({
     isCollapsed: state.appUI.isCollapsed
-})
+});
 
 export default connect(
     mapStateToProps, 

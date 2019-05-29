@@ -56,7 +56,7 @@ class ListNavigation extends React.Component {
             {   name: 'Schedule Viewer', 
                 icon: 'far fa-calendar-alt', 
                 link: '/iii'
-            },
+            }, 
         ],
     }
 

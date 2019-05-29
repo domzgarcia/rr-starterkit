@@ -45,7 +45,7 @@
     min-height: 54px;
 
     // max-width: 300px;
-    max-width: 240px;
+    max-width: 260px;
     width: 100%;
 
     > .icon-wrap {
@@ -69,14 +69,14 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
-        // width: 235px;
-        width: 175px;
+        width: 190px;
 
         .name-lbl {
             display: inline-block;
             max-width: 100%;
             width: 100%;
             line-height: 20px;
+            font-size: 13px;
         }
         .arrow {
             display: inline-block;

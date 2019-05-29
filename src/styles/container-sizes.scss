@@ -198,6 +198,18 @@ $offset: 0px;
     .side-navigation {
         max-width: 0;
     }
+    .side-navigation.-active .name-mobile {
+        display: none !important;
+    }
+    .side-navigation .o-logo {
+        position: absolute;
+        width: 100%;
+        border: 0;
+    }
+    .side-navigation.-active .o-logo {
+        position: fixed;
+        width: 260px;
+    }
 }
 // Target: 1366x670p
 @media only screen and (max-width: 670px){
