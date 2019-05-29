@@ -1,0 +1,22 @@
+.top-navigation {
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    padding: 15px;
+    position: relative;
+}
+.btn-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    text-align: right;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,355 @@
+// Default
+$offset: 0px;
+
+// Target: iPad Pro 12.9-inch H
+@media only screen and (max-width: 1336px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 1336px - $offset;
+        width: 1336px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Kidle Fire HDX - H
+@media only screen and (max-width: 1280px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 1280px - $offset;
+        width: 1280px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPad Pro 10.5-inch H
+@media only screen and (max-width: 1112px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 1112px - $offset;
+        width: 1112px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPad Mini H
+@media only screen and (max-width: 1024px){
+    #root {
+        overflow-x: hidden;
+        flex-direction: row;
+    }
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 1024px - $offset;
+        width: 1024px - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Nexus 7 H
+@media only screen and (max-width: 960px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 960px - $offset;
+        width: 960px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Laptop with touch - H
+@media only screen and (max-width: 950px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 950px - $offset;
+        width: 950px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Ipad Mini Portrait
+@media only screen and (max-width: 900px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 900px - $offset;
+        width: 900px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone XR
+@media only screen and (max-width: 896px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 896px - $offset;
+        width: 896px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Galaxy Note 9 V
+@media only screen and (max-width: 846px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 846px - $offset;
+        width: 846px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPad Pro 10.5-inch V
+@media only screen and (max-width: 834px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 834px - $offset;
+        width: 834px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Pixel 2 XL
+@media only screen and (max-width: 823px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 823px - $offset;
+        width: 823px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone X
+@media only screen and (max-width: 812px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 812px - $offset;
+        width: 812px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Kindle V
+@media only screen and (max-width: 800px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 800px - $offset;
+        width: 800px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: McbooAir/Pro
+@media only screen and (max-width: 781px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 781px - $offset;
+        width: 781px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPad Mini V
+@media only screen and (max-width: 768px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 768px - $offset;
+        width: 768px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Galaxy s9/s9plus
+@media only screen and (max-width: 740px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 740px - $offset;
+        width: 740px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone 6/7/8 Plus H
+@media only screen and (max-width: 736px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 736px - $offset;
+        width: 736px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Nexus 5x/6P V
+@media only screen and (max-width: 732px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 732px - $offset;
+        width: 732px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Pixel 2 H
+@media only screen and (max-width: 731px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 731px - $offset;
+        width: 731px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: 1280x720p
+@media only screen and (max-width: 720px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 720px - $offset;
+        width: 720px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+/*
+|--------------------------------------------------------
+| Section 670px Trigger most of mobile devices
+| set padding-left: 0; max-width: 0
+|--------------------------------------------------------
+*/
+@media only screen and (max-width: 670px){
+    .for-collapse-wrapper {
+        padding-left: 0;
+    }
+    .side-navigation {
+        max-width: 0;
+    }
+}
+// Target: 1366x670p
+@media only screen and (max-width: 670px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 670px - $offset;
+        width: 670px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone 6/7/8 H
+@media only screen and (max-width: 667px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 667px - $offset;
+        width: 667px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: 1600x660
+@media only screen and (max-width: 660px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 660px - $offset;
+        width: 660px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Ipad Mini Landscape
+@media only screen and (max-width: 650px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 650px - $offset;
+        width: 650px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Galaxy S III/5 V
+@media only screen and (max-width: 640px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 640px - $offset;
+        width: 640px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: 1280x720p
+@media only screen and (max-width: 610px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 610px - $offset;
+        width: 610px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Nexus 7 V
+@media only screen and (max-width: 600px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 600px - $offset;
+        width: 600px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone 5SE
+@media only screen and (max-width: 568px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 568px - $offset;
+        width: 568px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone 4 H
+@media only screen and (max-width: 480px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 480px - $offset;
+        width: 480px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone 6/7/8 Plus V
+@media only screen and (max-width: 414px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 414px - $offset;
+        width: 414px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Nexus 5x/6P H
+@media only screen and (max-width: 412px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 412px - $offset;
+        width: 412px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Pixel 2/XL V
+@media only screen and (max-width: 411px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 411px - $offset;
+        width: 411px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: LG Optimus L70
+@media only screen and (max-width: 384px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 384px - $offset;
+        width: 384px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone 6/7/8 V
+@media only screen and (max-width: 375px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 375px - $offset;
+        width: 375px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Galaxy S III/5 H
+@media only screen and (max-width: 360px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 360px - $offset;
+        width: 360px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: iPhone 4/5/5SE V
+@media only screen and (max-width: 320px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 320px - $offset;
+        width: 320px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+// Target: Nokia 8110 4G - V
+@media only screen and (max-width: 240px){
+    .top-navigation,
+    .main-content-wrapper {
+        max-width: 240px - $offset;
+        width: 240px     - $offset;
+        // #debugger border: 1px solid red;
+    }
+}
+

@@ -6,8 +6,9 @@ import Setup from './setup.js';
 
 // Aesthetics
 import 'styles/global.scss';
-import 'vendors/font-awesome/css/font-awesome.min.css';
 
+// # Remove use of outdated fontawesome import 'vendors/font-awesome/css/font-awesome.min.css';
+import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 ReactDOM.render(
     <Provider store={store}>

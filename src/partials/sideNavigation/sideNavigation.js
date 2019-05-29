@@ -1,49 +1,45 @@
 import React, {Fragment} from 'react';
+import {connect} from 'react-redux';
 import './sideNavigation.scss';
-import ListNavigation from './types/listNavigation';
+
+import ListNavigation from './types/ListNavigation';
 
 class SideNavigation extends React.Component {
-	
-	state = {
-		isCollapsed: false,
+
+	setClassesToActive(collapse){
+		/* Pointing side navigation only */
+		return (collapse) ? '-active' : '';
 	}
 
-	handleCollapse = () => {
-		this.setState({
-			isCollapsed: !this.state.isCollapsed,
-		});
-
-		const sideNav = document.querySelector('.sideNavigation');
-		const sideNavMainWrapper = document.querySelector('.mainWrapper');
-		
-		if(sideNav.classList.contains('-active') && 
-			sideNavMainWrapper.classList.contains('-active')
-		){
-			sideNav.classList.remove('-active');
-			sideNavMainWrapper.classList.remove('-active');
-	
-		} else {
-			sideNav.classList.add('-active');
-			sideNavMainWrapper.classList.add('-active');
-		}
-	}
-	
-	render(){	
-		const {isCollapsed} = this.state;
-
+	render(){
+		const {isCollapsed} = this.props
 		return(
-			<div className="sideNavigation -active">
-				<div className="btnWrapper">
-					<button className="dom-btn -knob" onClick={this.handleCollapse}>
-						<i className="icon-reorder"></i>&nbsp;
-					</button>
-				</div>
+			<div className={"side-navigation " + this.setClassesToActive(isCollapsed)}>
 				<Fragment>
 					<ListNavigation isCollapsed={isCollapsed} />
+
+					{/* Border fixer 
+					{(isCollapsed)
+					? */}<div style={{
+						borderRight:'1px solid #e4e4e4',
+						position: 'absolute',
+						bottom: '0',
+						left: '0',
+						width: '100%',
+						height: '100%',
+				      }}></div>
+					{/* : <span></span>}  */}
 				</Fragment>
 			</div>
 		)
 	}
 }
 
-export default SideNavigation;
+const mapStateToProps = (state) => ({
+    isCollapsed: state.appUI.isCollapsed
+})
+
+export default connect(
+    mapStateToProps, 
+    null
+)(SideNavigation);

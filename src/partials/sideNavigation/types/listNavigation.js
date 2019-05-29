@@ -2,76 +2,88 @@ import React from 'react';
 import './style.scss';
 import {Link} from 'react-router-dom';
 import {withRouter} from "react-router";
+import TabButton from './TabButton';
 
 class ListNavigation extends React.Component {
-
+    
     state = {
         routes: [
             {   name: 'dashboard', 
-                icon: 'icon-dashboard', 
+                icon: 'fas fa-tachometer-alt', 
                 link: '/'
             },
             {   name: 'attendance', 
-                icon: 'icon-time', 
+                icon: 'far fa-clock', 
                 link: '/attendance'
             },
             {   name: 'application summay', 
-                icon: 'icon-edit', 
+                icon: 'far fa-edit', 
                 link: '/application-summary'
+            },
+            // HR routes
+            {   name: '201 Files', 
+                icon: 'fas fa-file', 
+                link: '/aaa'
+            },
+            {   name: 'Reports', 
+                icon: 'fas fa-cloud-download-alt', 
+                link: '/bbb'
+            },
+            {   name: 'Task Management', 
+                icon: 'fas fa-tasks', 
+                link: '/ccc'
+            },
+            {   name: 'HR Announcement', 
+                icon: 'fas fa-bullhorn', 
+                link: '/ddd'
+            },
+            {   name: 'Announcement Summary', 
+                icon: 'far fa-list-alt', 
+                link: '/eee'
+            },
+            {   name: 'Holidays', 
+                icon: 'far fa-file-alt', 
+                link: '/fff'
+            },
+            {   name: 'Upload Leaves', 
+                icon: 'fas fa-cloud-upload-alt', 
+                link: '/ggg'
+            },
+            {   name: 'Policy Editor', 
+                icon: 'fas fa-rocket', 
+                link: '/hhh'
+            },
+            {   name: 'Schedule Viewer', 
+                icon: 'far fa-calendar-alt', 
+                link: '/iii'
             },
         ],
     }
 
     render(){
         const {routes} = this.state;
-        const {location} = this.props;
-
-        const collapse = () => {
-            return this.props.isCollapsed;
-        }
+        const {location, isCollapsed} = this.props;
 
         return(
-            <div className="remove-15px-gutter">
-                <ul className={"list-wrap " + ((collapse()) ? '-collapse' : '') }>
+            // remove-15px-gutter
+            <div className="always-on-top">
+                <ul className={"side-nav-list " + ((isCollapsed) ? '' : '-collapse') }>
                     {routes && routes.map((item, idx) => {
                         return(
                             <li key={idx}>
                                 <Link to={item.link}>
-                                    <SideNavigationTab 
+                                    <TabButton 
                                         data={item} 
                                         location={location.pathname} 
                                         isCollapsed={this.props.isCollapsed}
                                     />
                                 </Link>
-                            </li>
-                        )
+                            </li>)
                     })}
                 </ul>
             </div>
         )
     }
-}
-
-const SideNavigationTab = (props) => {
-    const {name, icon, link} = props.data;
-    const {location} = props;
-
-    const highlight = () => {
-        /* simple route detection */
-        if(location === link){
-            return true;
-        };
-        return false;
-    }
-
-    return(
-        <div className={"side-navigation-btn-wrap " + ((highlight()) ? '-active' : '') }>
-            <div className="icon-wrapper">
-                <i class={(icon) + " icon-6"}></i>
-            </div>
-            <span className="name-lbl-wrap">{name}</span>
-        </div>
-    )
 }
 
 export default withRouter(ListNavigation);

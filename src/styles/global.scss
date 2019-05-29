@@ -42,24 +42,25 @@ p, ul, li {
 
 /* Style Proper */
 
-#mainWrapper {
+#main-wrapper {
     position: relative;
     margin: 0;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background: #f2f3f7;
 }
-.MainContentWrapper {
+.main-content-wrapper {
     max-width: 100%;
     width: 100%;
 }
 /* Serve as class only */
-.mainWrapper {
+.for-collapse-wrapper {
     padding-left: 60px;
-    transition: .3s ease;
+    transition: .1s linear;
 }
-.mainWrapper.-active {
-    padding-left: 300px;
+.for-collapse-wrapper.-active {
+    // padding-left: 300px;
+    padding-left: 240px;
 }
 
 .dom-gutter {
@@ -80,57 +81,55 @@ p, ul, li {
     background: #3ADD40;
     color: #fff;
 }
+
 .dom-btn.-lightgreen:active {
-    background: #35D83B;
+    background: rgb(79, 80, 79);
 }
 .dom-btn {
+    /* generic */
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    text-align: center;
-    display: inline-block;
-    max-width: 100%;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px; 
+    display: block;    
+    position: relative;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     outline: none;
     border: 0;
+    display: inline-block;
+    padding: 10px 15px;
     cursor: pointer;
 }
+
 .dom-btn.shadowed {
     box-shadow: 0px 3px rgba(0,0,0,0.1);
 }
 
-@media only screen and (max-width: 1024px){
-    #mainWrapper {
-        // height: initial;
-    }
-}
+$offset: 60px;
 
 @media only screen and (max-width: 1024px){
-    #mainWrapper,
-    .MainContentWrapper,
-    .topNavigation {
-        max-width: 1024px;
-        width: 1024px;
-    }
-    #mainWrapper {
-        overflow: hidden;
-    }
+    // #main-wrapper,
+    // .main-content-wrapper,
+    // .top-navigation {
+    //     max-width: 1024px;
+    //     width: 1024px;
+    // }
+    // #main-wrapper {
+    //     overflow: hidden;
+    // }
 }
 
 @media only screen and (max-width: 375px){
-    #mainWrapper,
-    .MainContentWrapper,
-    .topNavigation {
-        max-width: 375px;
-        width: 375px;
-    }
-    #mainWrapper {
-        overflow: hidden;
-    }
+    // #main-wrapper,
+    // .main-content-wrapper,
+    // .top-navigation {
+    //     max-width: 375px;
+    //     width: 375px;
+    // }
+    // #main-wrapper {
+    //     overflow: hidden;
+    // }
 }
 
+@import 'container-sizes.scss';
